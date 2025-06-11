@@ -1,6 +1,10 @@
 from django.shortcuts import render
-
+from django.http import JsonResponse
 # Create your views here.
 
-def home(APIViewSet):
-    return "hi"
+def home(request):
+    data={
+        "message": "hello"
+    }
+    
+    return JsonResponse(data)
