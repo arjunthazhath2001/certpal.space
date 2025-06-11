@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'certpal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'certpal',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
