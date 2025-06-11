@@ -11,6 +11,7 @@ class Industry(models.Model):
     
     class Meta:
         db_table = 'industry'
+        verbose_name_plural='Industries'
     
 
 class Niche(models.Model):
@@ -26,7 +27,7 @@ class Niche(models.Model):
         db_table = 'niche'
     
 
-class Certifications(models.Model):
+class Certification(models.Model):
     id= models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
     certificate_name= models.CharField(max_length=300)
     niche= models.ForeignKey(Niche,on_delete=models.CASCADE)
@@ -51,9 +52,9 @@ class Certifications(models.Model):
         db_table = 'certification'
 
 
-class CertificationCourses(models.Model):
+class CertificationCourse(models.Model):
     id= models.UUIDField(primary_key=True,default=uuid.uuid4, editable=False)
-    certification= models.ForeignKey(Certifications,on_delete=models.CASCADE)
+    certification= models.ForeignKey(Certification,on_delete=models.CASCADE)
     course_title= models.CharField(max_length=500)
     course_link= models.URLField()
     cost= models.FloatField()

@@ -4,7 +4,7 @@ from . models import *
 
 admin.site.register(Industry)
 admin.site.register(Niche)
-admin.site.register(Certifications)
-admin.site.register(CertificationCourses)
+admin.site.register(Certification)
+admin.site.register(CertificationCourse)
 
 
