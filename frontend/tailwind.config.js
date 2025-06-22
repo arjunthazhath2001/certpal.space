@@ -63,6 +63,16 @@ const config = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+		keyframes: {
+			scroll: {
+			to: {
+				transform: 'translateX(calc(-50% - 0.5rem))',
+			},
+			},
+		},
+		animation: {
+			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

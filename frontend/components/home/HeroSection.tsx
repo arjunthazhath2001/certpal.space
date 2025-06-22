@@ -1,5 +1,6 @@
 import React from 'react'
 import { MovingBorderDemo } from '../common/MovingBorder'
+import { InfiniteMovingCardsDemo } from '../common/InfiniteMovingCards'
 
 const HeroSection = () => {
   return (
@@ -25,7 +26,12 @@ const HeroSection = () => {
             </div>
           ))}
         </div>
-
+        
+        <div className="pt-20">
+          <InfiniteMovingCardsDemo direction="left" />
+          <InfiniteMovingCardsDemo direction="right" />
+          <InfiniteMovingCardsDemo direction="left" />
+        </div>
 
     </div>
   )
