@@ -78,6 +78,8 @@ TEMPLATES = [
     },
 ]
 
+
+
 WSGI_APPLICATION = 'certpal.wsgi.application'
 
 
@@ -87,13 +89,13 @@ WSGI_APPLICATION = 'certpal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'certpal',
-        'USER': 'postgres',
+        'NAME': 'postgres',
+        'USER': 'postgres.gropaxjsoolxgqltvrcz',
         'PASSWORD': 'postgres',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '5432',
+        'HOST': 'aws-0-ap-south-1.pooler.supabase.com',   # Or an IP Address that your DB is hosted on
+        'PORT': '6543',
+    },
     }
-}
 
 
 # Password validation
