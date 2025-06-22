@@ -15,11 +15,11 @@ const HeroSection = () => {
         </div>
         
        
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-16 font-bold text-sm sm:text-lg md:text-lg pt-3 md:pt-6 px-4">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 xl:gap-16 font-bold text-sm sm:text-lg md:text-lg pt-1 xl:pt-6 px-4">
           {["Compare", "Discuss", "Certify"].map((label) => (
             <div
               key={label}
-              className="w-24 sm:w-28 md:w-36 h-8 *:sm:h-11 md:h-10 shadow-md rounded-xl flex justify-center items-center text-black bg-white"
+              className="w-20 sm:w-28 md:w-36 h-7 *:sm:h-11 md:h-10 shadow-md rounded-md md:rounded-xl flex justify-center items-center text-black bg-white"
             >
               {label}
             </div>
