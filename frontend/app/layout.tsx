@@ -49,7 +49,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative p-16 bg-gradient-to-bl from-fuchsiaCustom from-30% to-violetCustom to-90% flex flex-col h-screen">
+          <div className="relative p-16 bg-gradient-to-bl from-fuchsiaCustom from-30% to-violetCustom to-90% flex flex-col min-h-screen">
         
             <Navbar/>
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">

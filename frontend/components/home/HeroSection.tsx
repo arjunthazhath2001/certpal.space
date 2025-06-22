@@ -4,15 +4,15 @@ import { InfiniteMovingCardsDemo } from '../common/InfiniteMovingCards'
 
 const HeroSection = () => {
   return (
-    <div className='flex-col justify-center pt-10 items-center'>
+    <div className='flex flex-col items-center justify-start pt-4'>
 
         <div className='flex justify-center items-center pt-10 pb-3'>
             <MovingBorderDemo/>
         </div>
 
         <div className='flex-col mx-auto text-center justify-center items-center'>
-            <div className='text-lg sm:text-3xl xl:text-6xl pb-1 pt-2 font-extrabold'>Compare and choose from</div>
-            <div className='text-4xl sm:text-6xl xl:text-8xl pb-3 font-black'>5000+ certifications</div>
+            <div className='text-lg sm:text-3xl xl:text-4xl pb-1 pt-2 font-extrabold'>Compare and choose from</div>
+            <div className='text-4xl sm:text-6xl xl:text-7xl pb-3 font-black'>5000+ certifications</div>
         </div>
         
        
