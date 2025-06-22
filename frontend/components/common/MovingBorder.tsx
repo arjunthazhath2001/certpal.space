@@ -7,7 +7,7 @@ export function MovingBorderDemo() {
     <div>
       <Button
         borderRadius="1rem"
-        className="bg-slate-900 font-bold text-white border-slate-800"
+        className="bg-slate-900 text-[14px] md:text-lg font-bold text-white border-slate-800"
       >
         Get a salary hike
       </Button>
