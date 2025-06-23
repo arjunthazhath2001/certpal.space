@@ -6,14 +6,11 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
   items,
   direction,
-  speed = "fast",
+  speed='normal',
   pauseOnHover = false,
   className,
 }: {
-  items: {
-    src: string;
-    alt?: string;
-  }[];
+  items: React.ReactNode[];
 
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -88,13 +85,9 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="relative w-[300px] h-[200px] max-w-full shrink-0 rounded-xl overflow-hidden shadow-md bg-white dark:bg-zinc-900"
+            className="flex items-center justify-center w-48 h-24 max-w-full shrink-0" // Adjusted for SVG sizing
           >
-            <img
-              src={item.src}
-              alt={item.alt || `Image ${idx + 1}`}
-              className="w-full h-full object-cover"
-            />
+            {item}
           </li>
         ))}
 

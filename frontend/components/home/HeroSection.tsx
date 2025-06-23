@@ -7,7 +7,7 @@ import { InfiniteMovingCardsDemo } from '../common/InfiniteMovingCards'
 
 const HeroSection = () => {
   return (
-    <div className='bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 border-2 border-white/50 min-h-[700px] rounded-xl flex flex-col items-center justify-start pt-20 overflow-hidden'>
+    <div className='bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 border-2 border-white/50 shadow-[inset_0_4px_12px_rgba(0,0,0,0.6)] min-h-[700px] rounded-xl flex flex-col items-center justify-start pt-20 overflow-hidden'>
 
         <div className='flex justify-center items-center pt-10 pb-3'>
             <MovingBorderDemo/>
@@ -29,15 +29,10 @@ const HeroSection = () => {
             height={600}
             priority
             quality={100}
-            className="rounded-xl shadow-xl object-cover mx-auto"
+            className="rounded-xl shadow-xl object-cover mx-auto w-full h-auto scale-150 sm:scale-120 md:scale-110 xl:scale-100"
           />
         </div>
         
-        {/* <div className="pt-20">
-          <InfiniteMovingCardsDemo direction="left" />
-          <InfiniteMovingCardsDemo direction="right" />
-          <InfiniteMovingCardsDemo direction="left" />
-        </div> */}
 
     </div>
   )

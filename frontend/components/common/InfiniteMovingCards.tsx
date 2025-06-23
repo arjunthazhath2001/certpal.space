@@ -3,22 +3,21 @@
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
-export function InfiniteMovingCardsDemo({ direction }: { direction: "left" | "right" }) {
+export function InfiniteMovingCardsDemo({ 
+  direction,
+  items 
+}: { 
+  direction: "left" | "right";
+  items: React.ReactNode[];  // Add items to props
+}) {
   return (
-    <div className=" rounded-md flex flex-col antialiased bg-grid-white/[0.05] items-center justify-center relative">
+    <div className="rounded-md flex flex-col antialiased bg-grid-white/[0.05] items-center justify-center relative">
       <InfiniteMovingCards
-        items={imageItems}
+        items={items}  // Pass items prop
         direction={direction}
-        speed="slow"
+        speed="normal"
       />
     </div>
   );
 }
 
-const imageItems = [
-  { src: "/cert1.png", alt: "Certificate 1" },
-  { src: "/cert2.png", alt: "Certificate 2" },
-  { src: "/cert3.png", alt: "Certificate 3" },
-  { src: "/cert4.png", alt: "Certificate 4" },
-  { src: "/cert5.png", alt: "Certificate 5" },
-];
