@@ -58,8 +58,8 @@ const svgItems = [
         </svg>,
 
         <svg
-          width="150"
-          height="50"
+          width="300"
+          height="100"
           viewBox="0 0 300 100"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -95,8 +95,8 @@ const svgItems = [
         </svg>,
 
         <svg
-          width="88"
-          height="80"
+          width="99"
+          height="90"
           viewBox="0 0 99 90"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +208,7 @@ const svgItems = [
         </svg>,
 
         <svg
-          width="200"
+          width="300"
           height="100"
           viewBox="0 0 300 100"
           fill="none"
