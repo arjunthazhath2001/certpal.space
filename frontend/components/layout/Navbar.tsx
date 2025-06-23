@@ -71,7 +71,7 @@ export default function MainNavbar() {
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="default" href="#" variant="flat">
+          <Button as={Link} size="sm" className="bg-white text-black" href="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
