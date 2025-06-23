@@ -44,24 +44,24 @@ export default function MainNavbar() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarBrand className="mr-10 flex flex-col justify-start items-start">
+      <NavbarContent className="hidden sm:flex gap-16" justify="center">
+        <NavbarBrand className="mr-40 flex flex-col justify-start items-start">
           <div className="bg-gradient-to-r from-blue-500 to-pink-500 w-16 h-1 rounded-md"></div>
           <p className="font-black text-xl text-inherit">certpal</p>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-            Customers
+          <Link className="font-bold" color="foreground" href="#">
+            Compare
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link className="font-bold" color="foreground" href="#">
+            Discuss
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="font-bold" color="foreground" href="#">
+            Certify
           </Link>
         </NavbarItem>
       </NavbarContent>
