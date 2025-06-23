@@ -7,11 +7,11 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 
-import { Poppins } from 'next/font/google'
-import Navbar from "@/components/layout/Navbar";
+import { Inter } from 'next/font/google'
+import MainNavbar from "@/components/layout/Navbar";
  
-const poppins = Poppins({
-  weight: ['400','800'],
+const inter = Inter({
+  weight: ['400','700'],
   subsets: ['latin'],
 })
 
@@ -40,18 +40,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en" className={poppins.className}>
+    <html suppressHydrationWarning lang="en" className={inter.className}>
       <head />
       <body
         className={clsx(
           "min-h-screen text-foreground font-sans antialiased",
-          fontSans.variable,
+          
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative p-16 bg-gradient-to-bl from-fuchsiaCustom from-30% to-violetCustom to-90% flex flex-col min-h-screen">
+          <div className="relative bg-gradient-to-bl bg-black
+           flex flex-col min-h-screen">
         
-            <Navbar/>
+            <MainNavbar/>
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
