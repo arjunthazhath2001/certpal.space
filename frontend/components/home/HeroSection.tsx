@@ -1,7 +1,9 @@
+'use client'
 import React from 'react'
 import { MovingBorderDemo } from '../common/MovingBorder'
 import Image from 'next/image'
 import HeroImage from '@/public/hero-image.webp'
+import {motion} from 'framer-motion'
 
 import { InfiniteMovingCardsDemo } from '../common/InfiniteMovingCards'
 
@@ -21,7 +23,12 @@ const HeroSection = () => {
         {/* This div will grow to push the image to the bottom */}
         <div className="flex-grow"></div>
 
-        <div className="w-full">
+        <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        className="w-full"
+        >
           <Image
             src={HeroImage}
             alt="Certifications Preview"
@@ -31,7 +38,7 @@ const HeroSection = () => {
             quality={100}
             className="rounded-xl shadow-xl object-cover mx-auto w-full h-auto scale-150 sm:scale-120 md:scale-110 xl:scale-100"
           />
-        </div>
+        </motion.div>
         
 
     </div>
