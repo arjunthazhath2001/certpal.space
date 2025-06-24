@@ -22,34 +22,35 @@ const data = [
     src: "/card1.png",
     
   },
+    {
+    category: "STUDENTS",
+    title: "73% of students said certifications helped them stand out in internships and job applications.",
+    src: "/card3.png",    
+  },
+
   {
     category: "RECRUITERS",
     title: "53% of employers prefer candidates with industry certifications over those with just degrees.",
     src: "/card2.png",
     
   },
-  {
-    category: "STUDENTS",
-    title: "73% of students said certifications helped them stand out in internships and job applications.",
-    src: "/card1.png",    
-  },
 
   {
     category: "COLLEAGUES",
     title: "61% of certified employees say their colleagues respect them more after becoming certified.",
-    src: "/card1.png",
+    src: "/card5.png",
     
   },
   {
     category: "MANAGERS",
-    title: "Photography just got better.",
-    src: "/card1.png",
+    title: "81% of managers report higher team performance after encouraging staff to earn certifications.",
+    src: "/card4.png",
     
   },
   {
     category: "FAMILY",
-    title: "Hiring for a Staff Software Engineer",
-    src: "/card1.png",
+    title: "Certified professionals are 2× more likely to feel financially secure and support their families better.",
+    src: "/card6.png",
     
   },
 ];
