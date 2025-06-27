@@ -33,49 +33,45 @@ export default function MainNavbar() {
 
   return (
     <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent className="sm:hidden" justify="start">
+      <NavbarContent className="sm:hidden w-full px-4 flex items-center justify-between">
+        {/* Left */}
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
+
+        {/* Center (brand always centered) */}
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <NavbarBrand className="flex flex-col items-start">
+            <div className="bg-gradient-to-r from-blue-300 to-blue-800 w-20 h-1 rounded-sm" />
+            <p className="font-black text-2xl text-inherit">thazhath</p>
+          </NavbarBrand>
+        </div>
+
+        {/* Right placeholder to balance layout */}
+        <div className="w-6" />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
-        <NavbarBrand className="mr-10 flex flex-col justify-start items-start">
-          <div className="bg-gradient-to-r from-blue-500 to-pink-500 w-20 h-1 rounded-sm"></div>          
-          <p className="font-black text-2xl text-inherit">certpal</p>
-        </NavbarBrand>
-      </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-16" justify="center">
-        <NavbarBrand className="mr-40 flex flex-col justify-start items-start">
-          <div className="bg-gradient-to-r from-blue-500 to-pink-500 w-16 h-1 rounded-md"></div>
-          <p className="font-black text-xl text-inherit">certpal</p>
+        <NavbarBrand className="md:mr-28 xl:mr-40 flex flex-col justify-start items-start">
+          <div className="bg-gradient-to-r from-blue-300 to-blue-800 w-16 h-1 rounded-md"></div>
+          <p className="font-black text-xl text-inherit">thazhath</p>
         </NavbarBrand>
         <NavbarItem>
           <Link className="font-bold" color="foreground" href="#">
-            Compare
+            Certifications
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className="font-bold" color="foreground" href="#">
-            Discuss
+            Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className="font-bold" color="foreground" href="#">
-            Certify
+            Research
           </Link>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} size="sm" className="bg-white text-black" href="#" variant="flat">
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
 
       <NavbarMenu>
         {menuItems.map((item, index) => (
