@@ -17,19 +17,19 @@ export function AppleCardsCarouselDemo() {
 
 const data = [
   {
-    category: "PROFESSIONALS",
-    title: "Certified professionals earn $12,000 more annually on average than non-certified peers.",
-    src: "/card1.png",
+    category: "AWS DEVELOPER ASSOCIATE",
+    title: "Validates my ability to develop, deploy, and debug cloud-native apps using AWS services effectively.",
+    src: "/cert1.png",
     
   },
     {
-    category: "STUDENTS",
+    category: "AWS SOLUTIONS ARCHITECT PROFESSIONAL",
     title: "73% of students said certifications helped them stand out in internships and job applications.",
     src: "/card3.png",    
   },
 
   {
-    category: "RECRUITERS",
+    category: "AWS AI PRACTITIONER FOUNDATIONAL",
     title: "53% of employers prefer candidates with industry certifications over those with just degrees.",
     src: "/card2.png",
     

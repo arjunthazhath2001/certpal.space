@@ -165,9 +165,9 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-white border-4 border-white/20 md:h-[40rem] md:w-96 shadow-[inset_0_4px_12px_rgba(0,0,0,0.2)]"
+      className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-white border-4 border-white/20 md:h-[30rem] md:w-96 shadow-[inset_0_4px_12px_rgba(0,0,0,0.2)]"
     >
-      <div className="absolute top-40 md:top-[350px] w-full h-10">
+      <div className="absolute top-40 md:top-[150px] shadow-md w-full h-10">
         <Image
           src={card.src}
           alt={card.title}

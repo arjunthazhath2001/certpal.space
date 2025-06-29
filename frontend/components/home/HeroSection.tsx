@@ -23,23 +23,37 @@ const HeroSection = () => {
         {/* This div will grow to push the image to the bottom */}
         <div className="flex-grow"></div>
 
-        <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+      <motion.div
+        initial={{ y: 0, opacity: 0 }}
+        animate={{
+          y: [0, -10, 0],       // up and down loop
+          opacity: 1,           // fade in to 1
+        }}
+        transition={{
+          y: {
+            duration: 4,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+          },
+          opacity: {
+            duration: 1.5,
+            ease: "easeInOut",
+          },
+        }}
         className="w-full"
-        >
-          <Image
-            src={HeroImage}
-            alt="Certifications Preview"
-            width={1200}
-            height={600}
-            priority
-            quality={100}
-            className="rounded-xl shadow-xl object-cover mx-auto w-full h-auto scale-150 sm:scale-120 md:scale-110 xl:scale-100"
-          />
-        </motion.div>
-        
+      >
+        <Image
+          src={HeroImage}
+          alt="Certifications Preview"
+          width={1200}
+          height={600}
+          priority
+          quality={100}
+          className="rounded-xl shadow-xl object-cover mx-auto w-full h-auto scale-150 sm:scale-120 md:scale-110 xl:scale-100"
+        />
+      </motion.div>
+
 
     </div>
   )
