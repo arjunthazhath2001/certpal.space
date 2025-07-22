@@ -165,9 +165,9 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-white border-4 border-white/20 md:h-[30rem] md:w-96 shadow-[inset_0_4px_12px_rgba(0,0,0,0.2)]"
+      className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gradient-to-t from-blue-300 via-blue-500 to-blue-800 border-2 border-white/50 md:h-[30rem] md:w-96 shadow-[inset_0_4px_12px_rgba(0,0,0,0.2)]"
     >
-      <div className="absolute top-40 md:top-[150px] shadow-md w-full h-10">
+      <div className="absolute top-40 md:top-[150px] w-full h-10">
         <Image
           src={card.src}
           alt={card.title}
@@ -180,13 +180,13 @@ export const Card = ({
       <div className="relative z-40 p-8">
         <motion.p
           layoutId={layout ? `category-${card.category}` : undefined}
-          className="text-left font-sans text-[10px] md:text-sm font-medium text-black"
+          className="text-left font-sans text-[10px] md:text-sm font-medium text-white/80"
         >
           {card.category}
         </motion.p>
         <motion.p
           layoutId={layout ? `title-${card.title}` : undefined}
-          className="mt-2 max-w-xs text-left font-sans text-[13px] font-semibold [text-wrap:balance] text-black md:text-xl"
+          className="mt-2 max-w-xs text-left font-sans text-[13px] font-semibold [text-wrap:balance] text-white md:text-xl"
         >
           {card.title}
         </motion.p>
